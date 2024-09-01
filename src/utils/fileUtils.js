@@ -1,8 +1,6 @@
-// importar lo necesario
-
 /**
  * lee y devuelve el contenido de un archivo como texto en 'utf-8'
- * @param {string} ruta
+ * @param {string} ruta relativa al directorio del proyecto
  * @return {string} el texto leído
  */
 function leerArchivoComoString(ruta) {
@@ -10,10 +8,10 @@ function leerArchivoComoString(ruta) {
 
 /**
  * escribe el texto en el archivo de la ruta, sólo si tal archivo existe. sino, lanza error.
- * @param {string} ruta
- * @param {string} texto
+ * @param {string} ruta relativa al directorio del proyecto
+ * @param {string} texto 
  */
 function escribirTextoEnArchivo(ruta, texto, shouldCreateIfNotExists) {
 }
 
-// exportar lo necesario
+// exportar ambas funciones

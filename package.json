@@ -1,14 +1,14 @@
 {
   "type": "module",
-  "name": "apareo",
+  "exports": "./index.js",
+  "name": "01-tp-manejo-de-archivos",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "node src/main.js",
-    "test":"node test/testSuite.js"
+    "start": "node index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Gaston Reskin",
   "license": "ISC"
 }
