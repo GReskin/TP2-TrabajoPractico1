@@ -17,12 +17,18 @@ function leerArchivoComoString(ruta) {
  * @param {string} texto 
  */
 function escribirTextoEnArchivo(ruta, texto, shouldCreateIfNotExists) {
+    // si shouldCreateIfNotExists es true, entonces se crea el archivo si no existe
     if (shouldCreateIfNotExists) {
         fs.writeFileSync(ruta, texto);
-    } else {
+    } 
+    // si shouldCreateIfNotExists es false, entonces se lanza error si no existe
+    else {  
+        // si el archivo existe, se escribe el texto
         if (fs.existsSync(ruta)) {
             fs.writeFileSync(ruta, texto);
-        } else {
+        } 
+        // si el archivo no existe, se lanza error
+        else {
             throw new Error('el archivo no existe');
         }
     }
